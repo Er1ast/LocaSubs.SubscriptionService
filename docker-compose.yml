@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  subscriptionservice:
+    image: ${DOCKER_REGISTRY-}subscriptionservice
+    build:
+      context: .
+      dockerfile: SubscriptionService/Dockerfile
